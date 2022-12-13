@@ -8,7 +8,7 @@ const SocialMedia = () => {
   return (
     <div className="app__social">
         <div>
-          <a href="https://github.com/Nazmul6180" target="_blank" rel="norefferrer">
+          <a href="https://github.com/Nazmul6180" target="_blank" rel="noreferrer">
             <AiFillGithub/>
           </a>
         </div>

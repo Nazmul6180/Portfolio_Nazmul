@@ -44,7 +44,7 @@ const Skills = () => {
                 whileInView={{opacity: [0,1]}}
                 transition={{duration: 0.5}}
                 className="app__skills-item app__flex"
-                key={skill.name}
+                key={Math.random()}
               >
                 <div className="app__flex" style={{backgroundColor: '#edf2f8' }}> {/*change the bg color of icon mabye from here */}
                   <img src={urlFor(skill.icon)} alt={skill.name} />
@@ -59,7 +59,7 @@ const Skills = () => {
           {experiances.map((experiance) => (
               <motion.div
                 className="app__skills-exp-item"
-                key={experiance.year}
+                key={Math.random()}
               >
                 <div className="app__skills-exp-year">
                   <p className="bold-text">{experiance.year}</p>
@@ -69,14 +69,14 @@ const Skills = () => {
                 >
                   {experiance.works.map((work) => (
 
-                    <>
+                    <div key={Math.random()}>
                         <motion.div
                           whileInView={{opacity: [0,1]}}
                           transition={{ duration: 0.5 }}
                           className="app__skills-exp-work"
                           data-tip 
                           data-for={work.name}
-                          key={work.name}
+                          key={Math.random()}
                         >
                           <h4 className="bold-text">{work.name}</h4>
                           <p className="p-text">{work.company}</p>
@@ -90,7 +90,7 @@ const Skills = () => {
                           {work.desc}
           
                         </ReactTooltip>
-                    </> 
+                    </div> 
                   ))}
                 </motion.div>
               </motion.div>
