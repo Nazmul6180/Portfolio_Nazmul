@@ -14,7 +14,7 @@
     margin: 4rem 2rem 2rem  ;
 
     .app__footer-card{
-        min-width: 290px;
+        min-width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -42,6 +42,7 @@
         a {
             text-decoration: none;
             font-weight: 500;
+            font-size: 0.8rem;
         }
 
         &:hover {
@@ -50,6 +51,8 @@
 
         @media screen and (max-width: 450px) {
             width: 100%;
+            flex-direction: column;
+            flex-wrap: wrap;
         }
 
 

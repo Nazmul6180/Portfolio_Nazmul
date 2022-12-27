@@ -22,6 +22,7 @@
     flex-direction: row;
   
     padding: 6rem 2rem 0rem;
+    // overflow: hidden;
   
     @media screen and (min-width: 2000px) {
       padding-top: 8rem;
@@ -88,6 +89,12 @@
         font-size: 5rem;
       }
     }
+
+    @media screen and (min-width: 900px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
   
     @media screen and (max-width: 1200px) {
       justify-content: flex-start;
